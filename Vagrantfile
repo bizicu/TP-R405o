@@ -1,3 +1,4 @@
+# test
 # Vagrant pour le TP3 R405
 # -*- mode: ruby -*-
 # # vi: set ft=ruby :
