@@ -1,0 +1,19 @@
+---
+- name: Update et upgrade des paquets
+  hosts: all
+  remote_user: root
+
+  tasks:
+  - name: Mise a jour des paquets
+    ansible.builtin.apt:
+      upgrade: yes
+      update_cache: yes
+    
+- name: Installations apache 2
+  hosts: web
+  remote_user: root
+
+  tasks:
+  - name: Installation apache
+    ansible.builtin.apt:
+      name: apache2
