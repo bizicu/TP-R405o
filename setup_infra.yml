@@ -1,0 +1,9 @@
+---
+- name: configurations dns
+  hosts: dns
+  remote_user: root
+
+  tasks:
+  - name: Installation bind9
+    ansible.builtin.apt:
+      name: bind9
